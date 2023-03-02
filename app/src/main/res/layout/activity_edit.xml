@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnBackToItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Назад"
+        android:textSize="10dp"
+        android:padding="2dp"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:layout_gravity="top"
+        android:onClick="onButtonClicked"
+        />
+    <ImageView
+        android:id="@+id/simgItem"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_gravity="center"
+        android:onClick="onButtonClicked"/>
+   <EditText
+       android:id="@+id/enameItemEdit"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:inputType="text"
+       android:textSize="13dp"
+       android:hint="название рецепта:"/>
+    <EditText
+        android:id="@+id/erecipeItemEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:hint="как приготовть блюдо:"
+        android:inputType="textMultiLine"/>
+    <EditText
+        android:id="@+id/etimeItemEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="13dp"
+        android:hint="время приготовления в минутах:"/>
+    <EditText
+        android:id="@+id/ecaloriesItemEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="13dp"
+        android:hint="калории:"/>
+    <EditText
+        android:id="@+id/eIngredientsItemEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textSize="13dp"
+        android:hint="ингредиенты:"/>
+    <EditText
+        android:id="@+id/ecuisineItemEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textSize="13dp"
+        android:hint="название кухни:"/>
+    <Button
+        android:id="@+id/btnSelectIMG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Изменить картинку"
+        android:textSize="10dp"
+        android:padding="2dp"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:onClick="onButtonClicked"
+        />
+    <Button
+        android:id="@+id/btnEditItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сохранить"
+        android:textSize="10dp"
+        android:padding="2dp"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:onClick="onButtonClicked"
+        />
+
+</LinearLayout>

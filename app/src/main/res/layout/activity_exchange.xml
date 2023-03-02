@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/menu_btn13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Главная"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:layout_margin="1dp"
+            android:onClick="onButtonClicked"/>
+        <Button
+            android:id="@+id/menu_btn23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Поиск"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:layout_margin="1dp"
+            android:onClick="onButtonClicked"/>
+        <Button
+            android:id="@+id/menu_btn33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Обмен"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:layout_margin="1dp"
+            android:onClick="onButtonClicked"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <Button
+            android:id="@+id/import1_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="дабавить файл"
+            android:textSize="10dp"
+            android:padding="2dp"
+            android:layout_margin="1dp"
+            android:onClick="onButtonClicked"
+            android:gravity="center"/>
+        <Button
+            android:id="@+id/import2_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="дабавить вручную"
+            android:textSize="10dp"
+            android:padding="2dp"
+            android:layout_margin="1dp"
+            android:onClick="onButtonClicked"
+            android:gravity="center"/>
+        <Button
+            android:id="@+id/export_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="выгрузить всё"
+            android:textSize="10dp"
+            android:padding="2dp"
+            android:layout_margin="1dp"
+            android:onClick="onButtonClicked"
+            android:gravity="center"/>
+    </LinearLayout>
+</LinearLayout>

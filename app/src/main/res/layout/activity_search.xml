@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/menu_btn12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Главная"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:layout_margin="1dp"
+            android:onClick="onButtonClicked"
+            />
+        <Button
+            android:id="@+id/menu_btn22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Поиск"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:layout_margin="1dp"
+            android:onClick="onButtonClicked"
+            />
+        <Button
+            android:id="@+id/menu_btn32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Обмен"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:layout_margin="1dp"
+            android:onClick="onButtonClicked"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textSize="13dp"
+            android:hint="поиск"
+            android:gravity="center"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Поиск по избранному:"
+                android:gravity="center"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cbf"
+                android:checked="false"
+                android:onClick="onCheckboxClicked"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="найти"
+            android:textSize="10dp"
+            android:padding="2dp"
+            android:layout_margin="1dp"
+            android:gravity="center"
+            android:onClick="onButtonClicked"
+            />
+    </LinearLayout>
+</LinearLayout>
